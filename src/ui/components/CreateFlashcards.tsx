@@ -1,4 +1,12 @@
-import { EuiButton, EuiFieldText, EuiFlexGrid, EuiFormRow, EuiPageTemplate, EuiSpacer, EuiText } from "@elastic/eui";
+import {
+    EuiButton,
+    EuiFieldText,
+    EuiFlexGrid,
+    EuiFormRow,
+    EuiPageTemplate,
+    EuiSpacer,
+    EuiText
+} from "@elastic/eui";
 import { useNavigate } from "react-router";
 import ControlPanel from "./ControlPanel";
 import add_flashcard from "../assets/add_flashcard.svg";
@@ -40,7 +48,7 @@ export default function CreateFlashcards() {
                     <EuiButton onClick={() => navigate("/")}>
                         Cancel
                     </EuiButton>,
-                    <EuiButton 
+                    <EuiButton
                         onClick={saveFlashcards}
                         fill
                     >
